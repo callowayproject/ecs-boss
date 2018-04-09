@@ -1,0 +1,29 @@
+USE CASES:
+
+- First starting out
+
+    - Make a load balancer named `{{PROJECT_NAME}}`
+    - `ecs-manager setup`
+    - Make alterations in files reported by the setup command
+
+- Making changes and want to test
+
+    - `ecs-manager build`
+    - `./docker-run.sh`
+
+- Finished testing and want to dpeloy changes
+
+    - `ecs-manager deploy`
+
+- Made a change to the task def and want to update it without a new container
+
+    - can't: The build server is going to re-build the container each time anyway.
+
+- Made a change to the service def and want to update it without a new container or task def
+
+    - can't: The build server is going to re-build the container each time anyway.
+
+- Want to roll back the service to a previous task definition
+
+    - Gotta do it manually?
+    - Specify task def version?

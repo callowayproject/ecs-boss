@@ -1,0 +1,6 @@
+boto3>=1.4.0
+python-dotenv
+click
+botocore
+future
+requests

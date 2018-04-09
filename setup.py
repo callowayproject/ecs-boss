@@ -23,11 +23,11 @@ def get_readme():
     return ''
 
 # Use the docstring of the __init__ file to be the description
-DESC = " ".join(__import__('ecs_manager').__doc__.splitlines()).strip()
+DESC = " ".join(__import__('ecs_boss').__doc__.splitlines()).strip()
 
 setup(
-    name="ecs_manager",
-    version=__import__('ecs_manager').get_version().replace(' ', '-'),
+    name="ecs_boss",
+    version=__import__('ecs_boss').get_version().replace(' ', '-'),
     url='https://github.com/callowayproject/ecs_boss',
     author='Corey Oordt',
     author_email='coreyoordt@gmail.com',
@@ -40,7 +40,5 @@ setup(
         [console_scripts]
         ecs-boss=ecs_boss.commands:cli
     ''',
-    classifiers=[
-        'Framework :: Django',
-    ],
+    classifiers=[],
 )

@@ -3,17 +3,17 @@ USE CASES:
 - First starting out
 
     - Make a load balancer named `{{PROJECT_NAME}}`
-    - `ecs-manager setup`
+    - `ecs-boss setup`
     - Make alterations in files reported by the setup command
 
 - Making changes and want to test
 
-    - `ecs-manager build`
+    - `ecs-boss build`
     - `./docker-run.sh`
 
 - Finished testing and want to dpeloy changes
 
-    - `ecs-manager deploy`
+    - `ecs-boss deploy`
 
 - Made a change to the task def and want to update it without a new container
 
